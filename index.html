@@ -1,13 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DnD Scene Generator</title>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    #sceneButton { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    #sceneDisplay { margin-top: 20px; padding: 20px; border: 1px solid #ccc; min-height: 50px; display: none; }
+</style>
+</head>
+<body>
+
+<button id="sceneButton">Generate DnD Scene</button>
+<div id="sceneDisplay"></div>
+
+<script src="script.js"></script>
+</body>
 </html>
