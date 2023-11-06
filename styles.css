@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#sceneDisplay {
+    font-family: VT323;
+    max-width: 800px;
+   background-color: aquamarine;
+   
+    background-size: 100% auto;
+    margin-left: auto; /* These two margin properties */
+    margin-right: auto; /* center the element horizontally */
+
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}

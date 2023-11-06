@@ -4,17 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DnD Scene Generator</title>
+<link rel="stylesheet" type="text/css" href="rpgui.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <style>
     body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
     #sceneButton { padding: 10px 20px; font-size: 16px; cursor: pointer; }
     #sceneDisplay { margin-top: 20px; padding: 20px; border: 1px solid #ccc; min-height: 50px; display: none; }
 </style>
+
+
 </head>
 <body>
+<div class="rpgui-content">
+    <!-- RPGUI container to wrap the button and display -->
+    <div class="rpgui-container framed-golden">
+        
+        <button id="sceneButton" class="rpgui-button">Generate DnD Scene</button>
 
-<button id="sceneButton">Generate DnD Scene</button>
-<div id="sceneDisplay"></div>
+        <div id="sceneDisplay" class="rpgui-container framed-grey">
+            <span id="typedText"></span> <!-- Container for the typed text -->
+        </div>
 
+    </div>
+</div>
+<script src="rpgui-min.js"></script>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 </html>
