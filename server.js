@@ -17,7 +17,7 @@ app.post('/generate-scene', async (req, res) => {
     try {
         const response = await openai.chat.completions.create({
             model: "gpt-4",
-            messages: [{ role: "system", content: "you are a wise old storyteller. in two sentences, write a specific and creative, fun, scene idea for a role playing game"}],
+            messages: [{ role: "system", content: " in two sentences, write a concise scene idea for a dnd game. do not write out an entire plot for a campaign, only write one scene in specifics. it could be a fun scene, or a scary scene, or an epic scene, or any kind of scene. have fun with it. try not to use riddles or puzzles.  write as if you are brandon sanderson"}],
         });
 
         if (response.choices && response.choices.length > 0) {

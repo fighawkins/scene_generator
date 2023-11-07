@@ -1,19 +1,20 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+    body {
+        background-image: url('images/grass.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+    }
 
 #sceneDisplay {
     font-family: VT323;
-    max-width: 800px;
-   background-color: aquamarine;
+    max-width: 500px;
+   
    
     background-size: 100% auto;
-    margin-left: auto; /* These two margin properties */
-    margin-right: auto; /* center the element horizontally */
+    margin-left: auto; 
+    margin-right: auto; 
 
 }
 
@@ -33,3 +34,38 @@ html, body {
     50% { opacity: 0.0; }
     100% { opacity: 1; }
 }
+#sceneButton {
+    padding: 30px 20px;
+}
+
+.mushroom-corner {
+    position: absolute;
+    width: 200px;
+    height: auto; 
+}
+
+
+
+
+
+
+.mushroom-bottom-left {
+    bottom: 0;
+    left: 0;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.mushroom-bottom-right {
+    bottom: 0;
+    right: 0;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
